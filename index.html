@@ -7,24 +7,55 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target="#navigation" data-offset="50">
+<body data-spy="scroll" data-target="#navigation" data-offset="50" onload="init()">
 <div class="header">
   <h1>Reaktory wysokotemperaturowe i możliwości ich zastosowania</h1>
 
-  <p>Lorem ipsum dolor sit amet</p>
+  <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit
+  Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
 </div>
 <div class="caption" data-spy="affix" data-offset-top="200">
   <ul class="pager">
-    <li class="previous"><a href="#">&larr; Poprzedni</a></li>
-    <li class="current"><a href="#top">12. Chapter</a></li>
-    <li class="next"><a href="#">Następny &rarr;</a></li>
+    <li class="previous"><a href="#" onclick="loadPrev();">&larr; Poprzedni</a></li>
+    <li class="current"><a href="#content" id="#caption"></a></li>
+    <li class="next"><a href="#" onclick="loadNext()">Następny &rarr;</a></li>
   </ul>
 </div>
 <div class="container">
   <div class="navigation" id="navigation" data-spy="affix" data-offset-top="200">
     <ul class="nav nav-pills nav-stacked">
-      <li class="active"><a href="#top">Top</a></li>
-      <li><a href="#one">one</a></li>
+      <li class="active"><a href="#construction" onclick="loadContent(contents.construction)">
+        Konstrukcja i działanie VHTR
+      </a>
+      </li>
+      <li><a href="#fuel" onclick="loadContent(contents.fuel)">
+        Paliwo
+      </a></li>
+      <li><a href="#materials" onclick="loadContent(contents.materials)">
+        Materiały konstrukcyjne
+      </a></li>
+      <li><a href="#burnt_fuel" onclick="loadContent(contents.burnt_fuel)">
+        Postępowanie z wypalonym paliwem
+      </a></li>
+<!--      <li><a href="#one" onclick="loadContent(contents.construction)">
+        Rektory chłodzone helem w energetyce
+      </a></li>
+      <li><a href="#one" onclick="loadContent(contents.construction)">
+        Produkcja wodoru
+      </a></li>
+      <li><a href="#one" onclick="loadContent(contents.construction)">
+        Gazyfikacja węgla i produkcja paliwa syntetycznego
+      </a></li>
+      <li><a href="#one" onclick="loadContent(contents.construction)">
+        Proces gazyfikacji Fishera-Tropscha
+      </a></li>
+      <li><a href="#one" onclick="loadContent(contents.construction)">
+        Bezpieczeństwo
+      </a></li>
+      <li><a href="#one" onclick="loadContent(contents.construction)">
+        Status technologii i wdrożeń VHTR
+      </a></li>
+
       <li>
         <a href="#two">two</a>
         <ol class="nav nav-pills nav-stacked">
@@ -41,68 +72,10 @@
           <li><a href="#nine">nine</a></li>
         </ul>
     </li>
-    <li><a href="#">Program synergii jądrowo-węglowej jako jedna z opcji rozwiązania problemów energetycznych w
-      Polsce</a></li>
+    <li><a href="#">Program synergii jądrowo-węglowej w Polsce</a></li>-->
     </ul>
   </div>
-  <div class="content" id="#top">
-    <p id="one">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore e
-      t d
-      olore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    <p id="two">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-      et
-      dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-    <p id="three">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-      et
-      dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    <p id="four">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-      laborum.</p>
-
-
-    <p id="five">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-      laborum.</p></p>
-
-    <p id="six">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-      laborum.</p>
-
-    <p id="seven">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    <p id="eight">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-      pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-    <p id="nine">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-      pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div></p>
+  <div class="content" id="#content"></div>
 
   <div class="footer">
     <p>COPYLEFT Mateusz Gałażyn 2013</p>
@@ -111,5 +84,21 @@
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.2/angular.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  var contents = {};
+  var pageList = [];
+  var currentPageIndex = 1;
+</script>
+<script src="js/navigation.js"></script>
+<script src="contents/construction.js"></script>  
+<script src="contents/fuel.js"></script>  
+<script src="contents/materials.js"></script>  
+<script src="contents/burnt_fuel.js"></script>  
+<script type="text/javascript">
+  function init() {
+    createPageList();
+    loadContent(contents.construction);
+  }
+</script>
 </body>
 </html>

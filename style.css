@@ -188,3 +188,7 @@ body {
   margin-top: 0px;
   font-size: 18px;
 }
+
+.line-through {
+  text-decoration: line-through !important;
+}

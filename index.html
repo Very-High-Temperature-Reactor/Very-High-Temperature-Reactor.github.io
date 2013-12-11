@@ -11,10 +11,9 @@
 <div class="header">
   <h1>Reaktory wysokotemperaturowe i możliwości ich zastosowania</h1>
 
-  <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit
-  Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+  <p>Konstrukcja, działanie i właściwości reaktorów IV generacji, zbudowanych na bazie moderatora grafitowego, osiągających temperatury gazu powyżej 700 &deg;C</p>
 </div>
-<div class="caption" data-spy="affix" data-offset-top="200">
+<div class="top-caption" data-spy="affix" data-offset-top="200">
   <ul class="pager">
     <li class="previous"><a href="#" onclick="loadPrev();">&larr; Poprzedni</a></li>
     <li class="current"><a href="#content" id="#caption"></a></li>
@@ -27,6 +26,10 @@
       <li class="active"><a href="#construction" onclick="loadContent(contents.construction)">
         Konstrukcja i działanie VHTR
       </a>
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#history" onclick="loadContent(contents.construction)">Historia</a></li>
+          <li><a href="#details" onclick="loadContent(contents.construction)">Budowa</a></li>
+        </ul>
       </li>
       <li><a href="#fuel" onclick="loadContent(contents.fuel)">
         Paliwo
@@ -78,7 +81,11 @@
   <div class="content" id="#content"></div>
 
   <div class="footer">
-    <p>COPYLEFT Mateusz Gałażyn 2013</p>
+    <p>
+      <!--[if lte IE 8]><span style="filter: FlipH; -ms-filter: "FlipH"; display: inline-block;"><![endif]-->
+      <span style="-moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); display: inline-block;">©</span>
+      <!--[if lte IE 8]></span><![endif]-->
+    2013 Mateusz Gałażyn Kopiowanie i rozpowszechnianie w dowolnej formie dozwolone</p>
   </div>
 </div>
 <script src="https://code.jquery.com/jquery.js"></script>

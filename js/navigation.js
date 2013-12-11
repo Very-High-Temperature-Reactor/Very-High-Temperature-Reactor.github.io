@@ -1,15 +1,17 @@
 function processBibliography(page) {
   var bibliography = '';
   var elements = [];
+  var keyIndex = 1;
   for (var key in page.bibliography) {
     if (page.bibliography.hasOwnProperty(key)) {
       bibliography += '<li id="b_'+key+'">'+ page.bibliography[key] +'</li>';
       elements = document.getElementsByName('b_'+key);
       for(var i = 0; i < elements.length ; ++i) {
-        elements[i].text = '['+(parseInt(i)+1)+']';
+        elements[i].text = '['+keyIndex+']';
         elements[i].setAttribute('href','#b_'+key);
       }
     }
+    ++keyIndex;
   }
 
   if(bibliography.length > 0) {

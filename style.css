@@ -62,7 +62,7 @@ body {
   text-shadow: 1px 1px #000;
 }
 
-.caption {
+.top-caption {
   background: #e5e5e5;
   border-top: solid 1px #828282;
   border-bottom: solid 1px #828282;
@@ -172,4 +172,19 @@ body {
 
 .affix-top {
   position: static;
+}
+
+.content h1 {
+  margin-top: 0px;
+  /*margin-left: 5px;*/
+  /*padding-left: 7px;*/
+  font-size: 30px;
+  /*font-family: "Times New Roman";*/
+  /*border-left: solid 33px #777;*/
+  /*color: #777;*/
+}
+
+.content h2 {
+  margin-top: 0px;
+  font-size: 18px;
 }

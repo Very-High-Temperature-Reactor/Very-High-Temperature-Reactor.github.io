@@ -12,7 +12,7 @@ contents.construction = {
   '<li>Rdzeń usypany z kul grafitowych</li>'+
   '</ol>'+
   '<div class="thumbnail">'+
-    '<img src="http://upload.wikimedia.org/wikipedia/commons/1/1c/Very_High_Temperature_Reactor.svg" alt="Schemat elektrowni VHTR" class="img-thumbnail" width="100%"/>'+
+    '<img src="img/Very_High_Temperature_Reactor.svg" alt="Schemat elektrowni VHTR" class="img-thumbnail" width="100%"/>'+
     '<div class="caption">Rys. 1. Schemat koncepcyjny budowy VHTR <a name="b_wiki"></a>.</div>'+
     '</div></p>'+
   '<h2>Stały rdzeń pryzmatyczny</h2>' +
@@ -26,7 +26,7 @@ contents.construction = {
   '<h2>Rdzeń usypany</h2>' +
   '<p>Układ rdzenia usypanego jest podobny do rdzenia stałego, z tą różnicą, że elementy paliwowe są zastąpione kulami o średnicy ok. 6 cm zawierającymi paliwo w postaci granulek UO<sub>2</sub>. Schemat takiego rdzenia jest przedstawiony na rys. 3.'+
   '<div class="thumbnail">'+
-    '<img src="http://upload.wikimedia.org/wikipedia/commons/0/0f/Pebble_bed_reactor_scheme_(English).svg" alt="Rdzeń kulowy" class="img-thumbnail" width="50%"/>'+
+    '<img src="img/Pebble_bed_reactor_scheme_(English).svg" alt="Rdzeń kulowy" class="img-thumbnail" width="50%"/>'+
     '<div class="caption">Rys. 3. Schemat budowy rdzenia kulowego <a name="b_wiki_pebble"></a>.</div>'+
   '</div>'+
   'Kule w rdzeniu, doprowadzane od góry, cały czas poruszają się pod wpływem ciężkości w dół do wylotu, gdzie mierzone jest ich całkowite wypalenie. Wciąż aktywne kule są podawane znów do rdzenia, w celu wypalenia do końca. Średni czas przejścia kuli przez rdzeń wynosi 3-4 lata. Regulacja mocy wydzielanej w rdzeniu odbywa się tak jak w stałym rdzeniu, za pomocą prętów kontrolnych. Dodatkowo, w rdzeniu kulowym, wyłączanie awaryjne jest przeprowadzane poprzez zrzucenie drobnych kulek absorbera neutronów do rdzenia.'+

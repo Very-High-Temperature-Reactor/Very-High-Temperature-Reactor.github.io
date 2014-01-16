@@ -1,5 +1,5 @@
 contents.fuel = {
-  index: 2,
+  index: 3,
   caption: "Paliwo dla reaktorów wysokotemperaturowych",
   text: '<p id="fuel">Podstawowym elementem paliwowym dla VHTR są kapsułki z tlenkiem lub węglikiem uranu pokryte czterema wartstwami warstwami ochronnymi. W zależności od typu rdzenia reaktora, granulki ułożone są w sześciokątnych blokach z grafitu, albo grafitowych kulach.</p>'+
   '<h1 id="triso">Kapsułki TRISO</h1>'+

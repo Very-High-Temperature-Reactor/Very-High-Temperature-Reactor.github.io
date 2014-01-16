@@ -7,7 +7,7 @@ function processBibliography(page) {
       bibliography += '<li id="b_'+key+'">'+ page.bibliography[key] +'</li>';
       elements = document.getElementsByName('b_'+key);
       for(var i = 0; i < elements.length ; ++i) {
-        elements[i].text = '['+keyIndex+']';
+        elements[i].innerHTML = '['+keyIndex+']';
         elements[i].setAttribute('href','#b_'+key);
       }
     }

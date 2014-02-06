@@ -26,7 +26,7 @@ contents.power_applications = {
     '<div class="caption">Rys. 3. Wybrane procesy przemysłowe wraz z wymaganymi temperaturami oraz temperatury osiągalne w poszczególnych modelach reaktorów. <a name="b_kallman"></a>.</div>'+
   '</div>'+
   '<h1>Energia elektryczna</h1>'+
-  '<p>Do produkcji energii elektrycznej jest wykorzystywany bezpośredni <a href="http://otzs.w.interia.pl/rzeczywisty/rzeczywisty.htm">cykl Braytona</a>. Modeluje on układ generatora składający się z kompresora, elementu grzewczego i turbiny. Gaz po wyjściu z turbiny przechodzi przez <a href="http://pl.wikipedia.org/wiki/Rekuperator">rekuperator</a>, a następnie przez dwa kompresory zanim z powrotem trafi do zbiornika reaktora.</p>',
+  '<p>Do produkcji energii elektrycznej jest wykorzystywany bezpośredni <a href="http://otzs.w.interia.pl/rzeczywisty/rzeczywisty.htm">cykl Braytona</a>. Modeluje on układ generatora składający się z kompresora, elementu grzewczego i turbiny (rys. 1). Gaz po wyjściu z turbiny przechodzi przez <a href="http://pl.wikipedia.org/wiki/Rekuperator">rekuperator</a>, a następnie przez dwa kompresory zanim z powrotem trafi do zbiornika reaktora.</p>',
   bibliography: {
     vhtr_rep: '<a href="http://large.stanford.edu/courses/2013/ph241/kallman1/docs/chapin.pdf"><i>A Very High Temperature Reactor: A Technical Summary</i></a>',
     hydraulic: '<a href="http://www.inl.gov/technicalpublications/Documents/3479829.pdf">C. H. Oh, C. Davis, R. Barner, P. Pickard: <i>Thermal Hydraulic Analysis of HTGR Coupled with Hydrogen Plant</i></a>',

@@ -209,3 +209,7 @@ body {
 .nowrap {
   white-space: nowrap;
 }
+
+table tr.gray {
+  background: #d0d0d0; 
+}

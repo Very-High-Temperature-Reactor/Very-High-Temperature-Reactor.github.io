@@ -15,9 +15,9 @@
 </div>
 <div class="top-caption" data-spy="affix" data-offset-top="200">
   <ul class="pager">
-    <li class="previous"><a href="#" onclick="loadPrev();">&larr; Poprzedni</a></li>
+    <li class="previous"><a id="#prevButton" href="#" onclick="loadPrev();">&larr; Poprzedni</a></li>
     <li class="current"><a href="#content" id="#caption"></a></li>
-    <li class="next"><a href="#" onclick="loadNext()">Następny &rarr;</a></li>
+    <li class="next"><a id="#nextButton" href="#" onclick="loadNext()">Następny &rarr;</a></li>
   </ul>
 </div>
 <div class="container">
@@ -51,8 +51,8 @@
       <li><a href="#hydrogen_production" onclick="loadContent(contents.hydrogen_production)">
         Produkcja wodoru
       </a></li>
-      <li class="line-through"><a href="#one" onclick="loadContent(contents.construction)">
-        Proces gazyfikacji Fishera-Tropscha i produkcja paliwa syntetycznego
+      <li><a href="#synthetic_fuel" onclick="loadContent(contents.synthetic_fuel)">
+        Produkcja paliwa syntetycznego
       </a></li>
       <li class="line-through"><a href="#one" onclick="loadContent(contents.construction)">
         Bezpieczeństwo
@@ -91,11 +91,17 @@
 <script src="contents/burnt_fuel.js"></script>  
 <script src="contents/power_applications.js"></script>  
 <script src="contents/hydrogen_production.js"></script>  
+<script src="contents/synthetic_fuel.js"></script>  
 <script type="text/javascript">
   function init() {
     createPageList();
-    loadContent(contents.construction);
+    if(window.location.hash.substr(1) == '' || contents[window.location.hash.substr(1)] == null) {
+      loadContent(contents.construction);
+    } else {
+      loadContent(contents[window.location.hash.substr(1)]);
+    }
   }
+
 </script>
 </body>
 </html>

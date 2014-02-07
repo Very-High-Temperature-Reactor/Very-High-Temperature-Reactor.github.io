@@ -21,6 +21,7 @@ function processBibliography(page) {
 
 
 function loadContent(page) {
+  assignNavButtons(page);
   document.getElementById('#content').innerHTML = page.text;
   document.getElementById('#caption').innerHTML = page.index + ". " + page.caption;
   currentPageIndex = page.index-1;
@@ -33,6 +34,23 @@ function loadContent(page) {
   });
 }
 
+function assignNavButtons(page) {
+  var buttonIndex = 0;
+  if(page.index-2 >= 0) {
+    buttonIndex = page.index-2;
+  } else {
+    buttonIndex = 0;
+  }
+  document.getElementById('#prevButton').setAttribute('href','#'+pageList[buttonIndex].key);
+
+  var buttonIndex = 0;
+  if(page.index < pageList.length-1) {
+    buttonIndex = page.index;
+  } else {
+    buttonIndex = pageList.length-1;
+  }  
+  document.getElementById('#nextButton').setAttribute('href','#'+pageList[buttonIndex].key);
+}
 
 function loadNext() {
   if(currentPageIndex < pageList.length-1) {
@@ -50,6 +68,7 @@ function createPageList() {
   for (var key in contents) {
     if (contents.hasOwnProperty(key)) {
       pageList[contents[key].index-1] = contents[key];
+      pageList[contents[key].index-1].key = key;
     }
   }
 }

@@ -15,7 +15,7 @@ contents.hydrogen_production = {
   '<p>Elektroliza wody polega na dekompozycji cząsteczek H<sub>2</sub>O na tlen (O<sub>2</sub>) i wodór (H<sub>2</sub>) za pomocą prądu płynącego przez wodę. Do dwóch metalowych płytek umieszczonych w wodzie zostaje podłączone napięcie stałe. Po włączeniu zasilania, wodór będzie wydzielał się na katodzie, a tlen na anodzie. Ilość wymaganej energii do <a href="http://pl.wikipedia.org/wiki/Dysocjacja_elektrolityczna">zdysocjowania</a> cząsteczek wody zmienia się wraz z temperaturą (rys. 2).'+
   '<div class="thumbnail">'+
     '<img src="img/h2o_gibbs.png" alt="Energia dysocjacji gram-mola wody" class="img-thumbnail" width="70%"/>'+
-    '<div class="caption">Rys. 2. Wykres energii dysocjacji gram-mola wody w funkcji temperatury. <a name="b_doe_elec"></a>.</div>'+
+    '<div class="caption">Rys. 2. Wykres energii dysocjacji gram-mola wody w funkcji temperatury <a name="b_doe_elec"></a>.</div>'+
   '</div>'+
   'Widać, że koszt energetyczny zdysocjowania gram-mola wody (a za tym idzie wytworzenia wodoru) spada wraz z temperaturą. Przeprowadzanie tego procesu w temperaturze 800 &deg;C pozwala na zmniejszenie ilości użytej energii elektrycznej i zwiększenie opłacalności produkcji wodoru.</p>'+
   '<h1>Cykl termochemiczny</h1>'+

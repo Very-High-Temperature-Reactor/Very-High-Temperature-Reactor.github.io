@@ -213,3 +213,15 @@ body {
 table tr.gray {
   background: #d0d0d0; 
 }
+
+table.reactor_comparison th, 
+table.reactor_comparison td {
+  font-size: 10px;
+  margin-left: -7px;
+  margin-right: -7px;
+  text-align: center;
+}
+
+table.reactor_comparison th {
+  vertical-align: bottom !important;
+}
